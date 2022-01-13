@@ -13,13 +13,14 @@ const forecast = (long, lat, callback) => {
     } else if (body.error) {
       callback("Please speciy a valid location!", undefined);
     } else {
-      const data = "It's ";
-      body.current.weather_descriptions[0] +
+      const data =
+        "It's " +
+        body.current.weather_descriptions[0] +
         " in the evening. It is currently " +
         body.current.temperature +
         " degrees out and it feels like " +
         body.current.feelslike +
-        ". The humidity is " +
+        " degrees. The humidity is " +
         body.current.humidity +
         "% period.";
 
