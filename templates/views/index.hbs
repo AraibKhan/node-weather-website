@@ -8,23 +8,24 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="main-content">
-      {{>header}}
-      <p>Use this to get weather updates.</p>
+    <div class="hello">
+      <div class="main-content">
+        {{>header}}
+        <p>Use this to get weather updates.</p>
 
-      <form>
-        <input type="text" placeholder="Enter Location">
-        <button type="submit">Search</button>
-      </form>
+        <form>
+          <input type="text" placeholder="Enter Location">
+          <button type="submit">Search</button>
+        </form>
 
 
-      <p id="msg-1"></p>
-      <p id="msg-2"></p>
+        <p id="msg-1"></p>
+        <p id="msg-2"></p>
+      </div>
+      {{>footer}}
+
+
+      <script src="/js/app.js"></script>
     </div>
-    {{>footer}}
-
-
-
-    <script src="/js/app.js"></script>
   </body>
 </html>
